@@ -9,6 +9,12 @@ public class AppiumRobot extends BaseTest{
     }
 
     public boolean validaExistenciaTexto(String texto){
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return driver.findElement(By.xpath("//android.widget.TextView[@text='"+texto+"']")).isDisplayed();
     }
 }
