@@ -12,7 +12,7 @@ public class FormularioPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver),this );
     }
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@content-desc='nome']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@text='Nome']")
     private MobileElement nome_txt;
 
     @AndroidFindBy(xpath = "//android.widget.Spinner[@content-desc='console']")
