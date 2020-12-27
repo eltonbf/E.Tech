@@ -24,5 +24,6 @@ public class HomeSteps {
     @E("^toco no botão \"([^\"]*)\"$")
     public void tocoNoBotão(String texto){
         this.appiumRobot.clicarPorTexto(texto);
+
     }
 }
