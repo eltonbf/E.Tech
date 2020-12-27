@@ -25,9 +25,5 @@ public class HibridoLoginPage {
         return senha;
     }
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Seu Barriga. Nunca mais esqueça de pagar o aluguel.']")
-    private MobileElement mensagem;
-    public MobileElement getMensagem() {
-        return mensagem;
-    }
+
 }
