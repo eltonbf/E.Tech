@@ -6,6 +6,8 @@ import br.com.treinamento.etech.commons.BaseTest;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.Locale;
+
 public class SeuBarrigaHibridoFuncionalidade extends BaseTest {
     private SeuBarrigaHibridoPage seuBarrigaHibridoPage;
     private AppiumRobot appiumRobot;
@@ -15,7 +17,7 @@ public class SeuBarrigaHibridoFuncionalidade extends BaseTest {
     public SeuBarrigaHibridoFuncionalidade(){
         this.seuBarrigaHibridoPage = new SeuBarrigaHibridoPage(driver);
         this.appiumRobot = new AppiumRobot();
-        this.faker = new Faker();
+        this.faker = new Faker(new Locale("pt-BR"));
     }
 
     public void selecionarNovoUsuario(){
