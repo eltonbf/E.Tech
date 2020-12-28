@@ -32,4 +32,7 @@ public class AppiumRobot extends BaseTest{
         }
         return driver.findElement(By.xpath("//android.view.View[@text='"+texto+"']")).isDisplayed();
     }
+
+
+
 }
